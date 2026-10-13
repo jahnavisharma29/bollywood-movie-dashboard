@@ -1,85 +1,74 @@
 # 🎬 Bollywood Movie Dashboard
 
-An interactive data dashboard analyzing 2,200+ Bollywood films to uncover trends in genres, top directors, box office performance, and more.
-
-## 📊 Project Overview
-
-This project explores a rich dataset of Bollywood movies and creates visual insights to help understand:
-
-- Genre trends over time  
-- Most prolific and successful directors  
-- Year-wise release patterns  
-- Box office performance distributions
-
-Built using **Python** with libraries like **Pandas**, **Plotly**, and **Streamlit**, this dashboard offers a clean and interactive interface for data exploration.
+An interactive Streamlit dashboard that explores 2,200+ Bollywood films, showing how genres, directors, release patterns and box office performance have changed over time.
 
 ---
 
-## 📁 Project Structure
+## 🎯 What you can explore
 
+- **Genres:** the most common genres and how each one has trended over the years
+- **Directors:** the most prolific directors and the ones with the highest total box office
+- **Releases:** how many films were released each year
+- **Box office:** how gross earnings are distributed, and how ratings relate to box office
+- **Data:** browse the dataset and download the filtered results as a CSV
+
+Use the sidebar filters to narrow everything by release year, genre and rating.
+
+## 🛠️ Tech stack
+
+Python · Pandas · Plotly · Streamlit
+
+## 📁 Project structure
+
+```
 bollywood-movie-dashboard/
-│
 ├── data/
-│ └── bollywood_movies.csv # Cleaned movie data
-├── app.py # Main Streamlit dashboard script
-├── requirements.txt # Python dependencies
-└── README.md # Project overview
+│   └── bollywood_movies.csv   # Cleaned movie data
+├── app.py                     # Streamlit dashboard
+├── requirements.txt           # Python dependencies
+├── LICENSE
+└── README.md
+```
 
-
----
-
-## 🚀 Getting Started
-
-### 1. Clone the Repository
+## 🚀 Run it locally
 
 ```bash
+# 1. Clone the repo
 git clone https://github.com/jahnavisharma29/bollywood-movie-dashboard.git
 cd bollywood-movie-dashboard
 
-2. Create a Virtual Environment (Optional but recommended)
-python -m venv venv
-source venv/bin/activate   # On Windows: venv\Scripts\activate
+# 2. Install dependencies
+pip3 install -r requirements.txt
 
-3. Install Dependencies
-pip install -r requirements.txt
+# 3. Start the app
+python3 -m streamlit run app.py
+```
 
-4. Run the Dashboard
-streamlit run app.py
 Then open http://localhost:8501 in your browser.
 
+## 📚 Data
 
-🌐 Deployment
-You can deploy this project using:
+The dataset was compiled from public movie databases and cleaned for analysis. It covers 2,200+ films and includes:
 
-Streamlit Cloud
+- Movie title
+- Release year
+- Genre(s)
+- Director(s)
+- Box office gross
+- Ratings (where available)
 
-Render
+Some fields, such as ratings, are not available for every film, so a few charts only use the films that have a value.
 
-Hugging Face Spaces
+## 📄 License
 
-Heroku
+Released under the [MIT License](LICENSE).
 
-📚 Data Source
-The dataset was compiled from public movie databases and cleaned to include:
+## 👩‍💻 Author
 
-🎬 Movie Title
+**Jahnavi Sharma** · [GitHub](https://github.com/jahnavisharma29)
 
-📅 Release Year
+Released under the [MIT License](LICENSE).
 
-🎭 Genre(s)
+## 👩‍💻 Author
 
-🎬 Director(s)
-
-💰 Box Office Gross
-
-⭐ Ratings (where available)
-
-If the dataset is public, add a link here. If it’s self-curated or scraped, briefly describe how.
-
-📄 License
-This project is licensed under the MIT License.
-
-👩‍💻 Author
-Made with ❤️ by (https://github.com/jahnavisharma29
-Feel free to connect and reach out!
-
+**Jahnavi Sharma** · [GitHub](https://github.com/jahnavisharma29)
